@@ -336,7 +336,8 @@ img{
 }
 
 /* BUTTONS */
-.button{
+.button,
+.button__home{
     display: inline-block;
     padding: 1.125rem 2rem;
     font-weight: $font-medium;
