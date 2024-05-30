@@ -1,0 +1,55 @@
+/* Footer styles */
+
+.footer {
+    &__container {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    /* Footer Box */
+    &__box {
+        margin-bottom: $mb-4;
+    }
+
+    /* Footer Title */
+    &__title {
+        font-size: $big-font-size;
+    }
+
+    /* Footer Link */
+    &__link {
+        display: block;
+        width: max-content;
+        margin-bottom: $mb-1;
+
+        &:hover {
+            text-decoration: 2px underline solid $dark-color;
+            transition: 0.2s ease;
+        }
+    }
+
+    /* Footer Social Icons */
+    &__social {
+        font-size: 1.5rem;
+        margin-right: 1.25rem;
+
+        &:hover:nth-child(1) {
+            color: #4267B2;
+        }
+
+        &:hover:nth-child(2) {
+            color: #E1306C;
+        }
+
+        &:hover:nth-child(3) {
+            color: #25D366;
+        }
+    }
+
+    /* Footer Copy */
+    &__copy {
+        padding-top: 3rem;
+        font-size: $smaller-font-size;
+        color: $dark-color-light;
+        text-align: center;
+    }
+}
