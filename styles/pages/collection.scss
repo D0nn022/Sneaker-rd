@@ -1,0 +1,67 @@
+/* Collection styles */
+
+.collection {
+    &__container {
+        row-gap: 2rem;
+        justify-content: center;
+    }
+
+    &__card {
+        position: relative;
+        display: flex;
+        height: 328px;
+        background-color: $dark-color-lighten;
+        padding: 2rem;
+        border-radius: .5rem;
+        transition: .3s;
+
+        &:hover {
+            transform: translateY(-.5rem);
+        }
+    }
+
+    &__data {
+        align-self: flex-end;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 230px;
+    }
+
+    &__name,
+    &__description {
+        font-size: $bigger-font-size;
+        letter-spacing: .1rem;
+        font-weight: $font-semi-bold;
+    }
+
+    &__name {
+        margin-bottom: .25rem;
+    }
+
+    &__description {
+        margin-bottom: $mb-2;
+    }
+
+    /* Media Queries */
+    @include phone {
+        .collection {
+            &__container {
+                grid-template-columns: 415px;
+            }
+
+            &__img {
+                width: 260px;
+            }
+        }
+    }
+
+    @include pc {
+        .collection__container {
+            grid-template-columns: repeat(2, 415px);
+        }
+    }
+}
