@@ -251,7 +251,8 @@ img {
 }
 
 /* BUTTONS */
-.button {
+.button,
+.button__home {
   display: inline-block;
   padding: 1.125rem 2rem;
   font-weight: 500;
@@ -264,10 +265,12 @@ img {
   transition: 0.3s;
   cursor: pointer;
 }
-.button:hover {
+.button:hover,
+.button__home:hover {
   transform: translateY(-0.25rem);
 }
-.button-light {
+.button-light,
+.button__home-light {
   display: inline-flex;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
@@ -277,10 +280,12 @@ img {
   align-items: center;
   cursor: pointer;
 }
-.button-light:hover .button-icon {
+.button-light:hover .button-icon,
+.button__home-light:hover .button-icon {
   transform: translateX(0.25rem);
 }
-.button-icon {
+.button-icon,
+.button__home-icon {
   font-size: 1.25rem;
   margin-left: 0.5rem;
   transition: 0.3s;

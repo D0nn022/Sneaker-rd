@@ -1,0 +1,22 @@
+// Importing Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+// Importing Variables, Mixins, and Base
+@import "base/variables";
+@import "base/mixins";
+@import "base/base";
+
+// Importing Layout
+@import "layout/footer";
+@import "layout/header";
+
+// Importing Components
+@import "components/button";
+@import "components/cart";
+@import "components/nav";
+@import "components/modal";
+
+// Importing Pages
+@import "pages/home";
+@import "pages/collection";
+@import "pages/sneakers";

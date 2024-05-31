@@ -1,0 +1,41 @@
+/* Button styles */
+
+.button,
+.button__home {
+    display: inline-block;
+    padding: 1.125rem 2rem;
+    font-weight: $font-medium;
+    font-family: $body-font;
+    font-size: 1rem;
+    border: 0;
+    border-radius: .5rem;
+    background-color: $dark-color;
+    color: $white-color;
+    transition: .3s;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-.25rem);
+    }
+
+    &-light {
+        display: inline-flex;
+        font-weight: $font-bold;
+        font-family: $body-font;
+        font-size: 1rem;
+        color: $dark-color;
+        border: none;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover .button-icon {
+            transform: translateX(.25rem);
+        }
+    }
+
+    &-icon {
+        font-size: 1.25rem;
+        margin-left: $mb-1;
+        transition: .3s;
+    }
+}

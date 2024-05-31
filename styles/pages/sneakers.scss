@@ -1,0 +1,42 @@
+/* Sneakers styles */
+
+.sneaker {
+    &__container {
+        row-gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    &__sale {
+        position: absolute;
+        left: .5rem;
+        background-color: $dark-color;
+        color: $white-color;
+        padding: .25rem .5rem;
+        border-radius: .25rem;
+        font-size: $h2-font-size;
+        transform: rotate(-90deg);
+        letter-spacing: .1rem;
+    }
+
+    &__img {
+        width: 220px;
+        margin-top: $mb-3;
+        margin-bottom: $mb-6;
+        transform: $rotate-img;
+    }
+
+    &__name,
+    &__preci {
+        font-size: $h2-font-size;
+        letter-spacing: .1rem;
+        font-weight: $font-semi-bold;
+    }
+
+    &__name {
+        margin-bottom: $mb-1;
+    }
+
+    &__preci {
+        margin-bottom: $mb-4;
+    }
+}

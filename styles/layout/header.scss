@@ -1,0 +1,81 @@
+/* Header styles */
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-fixed;
+    background-color: $dark-color-lighten;
+}
+
+/* Navigation */
+.nav {
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Navigation Item */
+    &__item {
+        margin-bottom: $mb-4;
+    }
+
+    /* Navigation Logo */
+    &__logo {
+        font-weight: $font-semi-bold;
+    }
+
+    /* Navigation Toggle & Shop Icon */
+    &__toggle,
+    &__shop {
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+
+    /* Navigation Link Hover Effect */
+    &__link:hover {
+        text-decoration: 2px underline solid $dark-color;
+        transition: 0.2s ease;
+    }
+
+    /* Media Queries */
+    @include tablet {
+        .nav__menu {
+            position: fixed;
+            top: $header-height;
+            left: -100%;
+            width: 70%;
+            height: 100vh;
+            padding: 2rem;
+            background-color: $white-color;
+            transition: .5s;
+
+            /* Show Menu */
+            &.show {
+                left: 0;
+            }
+        }
+    }
+
+    @include laptop {
+        height: calc(#{$header-height} + 1.5rem);
+
+        &__menu {
+            margin-left: auto;
+        }
+
+        &__list {
+            display: flex;
+        }
+
+        &__item {
+            margin-left: $mb-6;
+            margin-bottom: 0;
+        }
+
+        &__toggle {
+            display: none;
+        }
+    }
+}
